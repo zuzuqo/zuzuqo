@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZUZUQO</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: #f4f4f4;
-    }
-    h1 {
-      color: #111;
-      margin-bottom: 20px;
-    }
-    a {
-      display: block;
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #000;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-    a:hover {
-      background-color: #444;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zuzuqo — Günlük Giyim</title>
+<meta name="description" content="Zuzuqo, KAAN SARIÇAM tarafından işletilen bir günlük giyim markasıdır. Ürünlerimizi Trendyol mağazamızdan inceleyebilirsiniz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>ZUZUQO</h1>
-  <a href="https://www.instagram.com/zuzuqo.official?igsh=MWd2Znd5aHJzZzFveQ%3D%3D&utm_source=qr" target="_blank">
-    Instagram Profilimiz
-  </a>
-  <a href="https://www.trendyol.com/magaza/zuzuqo-m-1135297?sst=0" target="_blank">
-    Trendyol Mağazamız
-  </a>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">ZUZU<span>QO</span></a>
+    <button class="nav-toggle" aria-label="Menüyü aç" onclick="document.querySelector('.nav-links').classList.toggle('open')">MENÜ</button>
+    <ul class="nav-links">
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="gizlilik.html">Gizlilik</a></li>
+      <li><a class="btn" href="https://www.trendyol.com/magaza/zuzuqo-m-1135297?sst=0&channelId=1&event=0" target="_blank" rel="noopener">Trendyol Mağazamız</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="tag-ribbon"><span>ZUZUQO — İSTANBUL — TÜRKİYE</span></div>
+  <div class="wrap">
+    <p class="eyebrow">Günlük Giyim Markası</p>
+    <h1>Sade çizgiler,<br>her güne uyan parçalar.</h1>
+    <p class="lede">Zuzuqo, rahat ve şık günlük giyim parçaları üreten bir Türk giyim markasıdır. Koleksiyonumuzu Trendyol mağazamızdan ve Instagram sayfamızdan takip edebilirsiniz.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="https://www.trendyol.com/magaza/zuzuqo-m-1135297?sst=0&channelId=1&event=0" target="_blank" rel="noopener">Trendyol Mağazamız</a>
+      <a class="btn outline" href="https://www.instagram.com/zuzuqo.official/" target="_blank" rel="noopener">Instagram Profilimiz</a>
+    </div>
+  </div>
+</header>
+
+<hr class="divider">
+
+<section>
+  <div class="wrap grid-2">
+    <div>
+      <p class="eyebrow">Marka</p>
+      <h2 class="display" style="font-size:28px; margin-top:10px;">Zuzuqo hakkında</h2>
+      <p style="margin-top:14px; max-width:56ch;">Zuzuqo, İstanbul merkezli olarak KAAN SARIÇAM tarafından kurulmuş ve işletilen bir giyim markasıdır. Günlük kullanıma uygun, kaliteli ve erişilebilir parçalar üretmeyi hedefliyoruz.</p>
+      <p style="margin-top:10px;"><a href="hakkimizda.html" style="text-decoration:underline; text-underline-offset:3px;">Markamız hakkında daha fazla bilgi →</a></p>
+    </div>
+    <div>
+      <ul class="label-list">
+        <li><span class="k">İşletme</span><span>KAAN SARIÇAM</span></li>
+        <li><span class="k">Marka</span><span>Zuzuqo</span></li>
+        <li><span class="k">Konum</span><span>İstanbul, Türkiye</span></li>
+        <li><span class="k">E-posta</span><span><a href="mailto:info@zuzuqo.com">info@zuzuqo.com</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="legal">© 2026 KAAN SARIÇAM. Tüm hakları saklıdır.</p>
+    <ul class="foot-links">
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="gizlilik.html">Gizlilik &amp; KVKK</a></li>
+    </ul>
+  </div>
+</footer>
+
 </body>
 </html>
